@@ -27,7 +27,7 @@ app ("howfardoesdataurlstraverse", function(task)
     task.setEmail("feedback @nospam@ yourcompany.com");
     task.setSummary("howfardoesdataurlstraverse");
     task.setSources((new FileList("**/*.j")).exclude(FILE.join("Build", "**")));
-    task.setResources(new FileList("Resources/**"));
+    task.setResources(new FileList("Resources/**/**"));
     task.setIndexFilePath("index.html");
     task.setInfoPlistPath("Info.plist");
 
